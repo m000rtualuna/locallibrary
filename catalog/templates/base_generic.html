@@ -33,7 +33,10 @@
    {% else %}
      <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
    {% endif %}
+                <li>Staff</li>
               <li><a href="{% url 'all-borrowed' %}">All Borrowed</a></li>
+                <li><a href="{% url 'author-create' %}">Create author</a></li>
+                <li><a href="{% url 'book-create' %}">Create book</a></li>
             </ul>
           {% endblock %}
         </div>
